@@ -4,6 +4,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   width: 100%;
   height: 100%;
