@@ -29,4 +29,5 @@
 .about__text {
   text-align: justify;
   color: var(--black);
+  max-width: 700px;
 }

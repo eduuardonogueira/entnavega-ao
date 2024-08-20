@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/reset.css" />
     <link rel="stylesheet" href="./assets/styles/global.css" />
-    <link rel="stylesheet" href="./assets/styles/maintenance.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
     <link
       rel="shortcut icon"
       href="./assets/img/logo-favicon.png"
@@ -18,22 +18,356 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>ENT NAVEGAÇÃO</title>
   </head>
   <body>
+    <header class="menu">
+      <nav class="menu-nav">
+        <img src="./assets/img/logo.png" alt="Logo" />
+
+        <ul class="menu-links" id="menuLinks">
+          <button class="close-menu" id="closeMenu">
+            <i class="ph ph-x"></i>
+          </button>
+
+          <li class="menu-links__link">
+            <a href="#about">
+              <p>Sobre</p>
+              <i class="ph ph-anchor-simple"></i>
+            </a>
+          </li>
+          <li class="menu-links__link">
+            <a href="#services">
+              <p>Serviços</p>
+              <i class="ph ph-anchor-simple"></i>
+            </a>
+          </li>
+          <li class="menu-links__link">
+            <a href="#responsible">
+              <p>Responsável</p>
+              <i class="ph ph-anchor-simple"></i>
+            </a>
+          </li>
+          <li class="menu-links__link">
+            <a href="#clients">
+              <p>Clientes</p>
+              <i class="ph ph-anchor-simple"></i>
+            </a>
+          </li>
+          <li class="menu-links__link">
+            <a href="#contact">
+              <p>Contato</p>
+              <i class="ph ph-anchor-simple"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="close-screen" id="closeScreen"></div>
+
+        <button class="menu-button" id="menuButton">
+          <i class="ph ph-list menu__icon"></i>
+        </button>
+      </nav>
+    </header>
     <main class="main">
-      <section class="maintenance">
+      <section class="banner">
         <img
-          class="maintenance__img"
-          src="./assets/img/maintenance-vetor.svg"
-          alt="Uma pessoa vestida de amarela segurando ferramentas dentro de uma engrenagem"
+          class="banner__img"
+          src="./assets/img/banner-img.png"
+          alt="Uma embarcação navegando no mar"
         />
-        <h1 class="maintenance__title">Página em manutenção!</h1>
-        <p class="maintenance__text">
-          Não se preocupe! Estamos trabalhando para que a página esteja ativa
-          novamente!
-        </p>
+        <h1 class="banner__title title-md">Agência de Navegação</h1>
+        <h2 class="banner__subtitle subtitle">E N T FERREIRA CARDOSO</h2>
       </section>
+
+      <div class="container">
+        <section class="about" id="about">
+          <img class="about__img" src="./assets/img/about-img.png" alt="" />
+
+          <div class="about-content">
+            <h2 class="about__title title-sm">Quem Somos?</h2>
+            <p class="about__text text-xl">
+              Somos uma empresa atuante no Estado do Pará, na cidade de Belém,
+              há mais de 10 anos no ramo da navegação. Nosso objetivo é
+              proporcionar as empresas do seguimento a traquilidade de ter uma
+              navegação segura, legalizando suas embarcações e qualificando suas
+              tripulações, oferecendo também outros serviços como: Aferição e
+              manutenção de bússolas, revisão de balsas salva-vidas,
+              fornecimento de material de salvatagem e publicações. Nosso maior
+              intento é garantir a satisfação do cliente.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section class="services" id="services">
+          <h2 class="services__title title-sm">Serviços</h2>
+
+          <ul class="services__content">
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_01.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-seal-check"></i>
+                <h3 class="card__title text-xl">
+                  Legalização, Inscrição e Despachos de Embarcações
+                </h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_02.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-fish"></i>
+                <h3 class="card__title text-xl">
+                  Permissão de Pesca Inicial, Atualização e Transferência de
+                  Propriedade
+                </h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_03.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-boat"></i>
+                <h3 class="card__title text-xl">
+                  Revisão de Balsa Salva-Vidas Infláveis
+                </h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_04.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-sailboat"></i>
+                <h3 class="card__title text-xl">
+                  Fornecimento de Materiais de Navegação
+                </h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_05.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-address-book-tabs"></i>
+                <h3 class="card__title text-xl">
+                  Atualização, Ascensão, Transferência de Categoria e 2ª Via da
+                  CIR
+                </h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_06.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-broadcast"></i>
+                <h3 class="card__title text-xl">Licença de Rádio (ANATEL)</h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_07.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-identification-card"></i>
+                <h3 class="card__title text-xl">
+                  Emissão de Carteira de Arrais Amador
+                </h3>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__img"
+                src="./assets/img/card-img_08.png"
+                alt=""
+              />
+              <div class="card__content">
+                <i class="ph-fill ph-compass"></i>
+                <h3 class="card__title text-xl">
+                  Compensação e Manutenção de Bússola com Certificação
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="responsible" id="responsible">
+        <img
+          class="responsible-background"
+          src="./assets/img/responsible-background.png"
+          alt=""
+        />
+
+        <div class="container">
+          <h2 class="responsible__title title-sm">Responsável Técnico</h2>
+
+          <div class="responsible__content">
+            <img
+              class="responsible-img"
+              src="./assets/img/responsible-img.png"
+              alt=""
+            />
+
+            <ul class="responsible-content__information">
+              <li class="information__title">
+                <h3 class="title-sm">Marcos Antonio da Silva Cardoso</h3>
+                <h4 class="text-xxl responsible-subtitle">CEO & Founder</h4>
+              </li>
+
+              <li class="responsible__business">
+                <i class="ph-fill ph-check-circle"></i>
+                <ul class="business__content">
+                  <li>E.N.T FERREIRA CARDOSO - ME.</li>
+                  <li>CNPJ: 21.104.110/0001-73</li>
+                  <li>INSCRIÇÃO ESTADUAL: 15.566.150-7</li>
+                </ul>
+              </li>
+
+              <li class="responsible__phones">
+                <i class="ph-fill ph-phone"></i>
+                <ul class="phones__content">
+                  <li>+55 (91) 98291-1504</li>
+                  <li>+55 (91) 98841-4339</li>
+                </ul>
+              </li>
+
+              <li class="responsible__email">
+                <i class="ph-fill ph-envelope"></i>
+                <p>marcosnavegacao@gmail.com</p>
+              </li>
+
+              <li class="responsible__location">
+                <i class="ph-fill ph-map-pin"></i>
+                <p>
+                  Passagem Santo Antônio, Nº 31, Pratinha, Belém - PA,
+                  CEP:66816-155
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients" id="clients">
+        <div class="container">
+          <h2 class="clients__title title-sm">Nossos Clientes</h2>
+
+          <div class="clients__logo-wrapper">
+            <img src="./assets/img/unitapajos-logo.png" alt="" />
+            <img src="./assets/img/ldc-logo.png" alt="" />
+            <img src="./assets/img/cctrb-logo.png" alt="" />
+            <img src="./assets/img/hidrovias_do_brasil-logo.png" alt="" />
+            <img src="./assets/img/saam_towage-logo.png" alt="" />
+            <img src="./assets/img/wilson_sons-logo.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <section class="footer__content-wrapper">
+            <div class="footer-business">
+              <img src="./assets/img/footer-logo.png" alt="" />
+              <ul class="footer-business__content">
+                <li class="footer__title">
+                  <h3>MNV - Agência de Navegação</h3>
+                </li>
+                <li>CNPJ: 21.104.110/0001-73</li>
+                <li>Belém - Pará - Brasil</li>
+                <li>+55 (91) 98291-1504</li>
+                <li>marcosnavegacao@gmail.com</li>
+              </ul>
+            </div>
+
+            <nav class="footer-nav">
+              <h3 class="footer-nav__title">Navegação</h3>
+
+              <ul class="footer-nav__links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#responsible">Responsável</a></li>
+                <li><a href="#clients">Clientes</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer-nav">
+              <h3 class="footer-nav__title">Referências</h3>
+
+              <ul class="footer-nav__links">
+                <li>
+                  <a href="https://www.marinha.mil.br/dpc/node/3505"
+                    >Capitanias dos Portos</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.marinha.mil.br/tm/">Tribunal maritimo</a>
+                </li>
+                <li>
+                  <a href="https://www.marinha.mil.br/dpc/"
+                    >Diretoria de portos e costas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.gov.br/anatel/pt-br/centrais-de-conteudo/processo-eletronico"
+                    >Anatel</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="footer-nav">
+              <h3 class="footer-nav__title">Redes Sociais</h3>
+
+              <ul class="footer-networks">
+                <li>
+                  <a href=""><i class="ph-fill ph-envelope"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ph-fill ph-whatsapp-logo"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/e.n.t.navegacao?igsh=Zm9tMG82OG5mb2Nj&utm_source=qr"
+                    ><i class="ph-fill ph-instagram-logo"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+
+          <hr class="footer__divisor" />
+
+          <section class="copyright">
+            <p>© 2024 MNV - Todos os direitos reservados.</p>
+          </section>
+        </div>
+      </footer>
     </main>
+    <script src="./assets/js/menu.js" type="text/javascript"></script>
   </body>
 </html>

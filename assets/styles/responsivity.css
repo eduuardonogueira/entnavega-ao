@@ -1,0 +1,99 @@
+@media screen and (min-width: 768px) {
+  .about {
+    margin-block: 150px;
+  }
+
+  .phones__content {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    padding: 24px 36px;
+  }
+
+  .menu-nav {
+    box-sizing: border-box;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: row;
+    height: unset;
+    width: unset;
+    gap: 18px;
+    background: none;
+    position: relative;
+    padding: unset;
+    justify-content: space-between;
+  }
+
+  .menu-links li a {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.5s ease;
+
+    &:hover {
+      transform: unset;
+    }
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .about {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .about-content {
+    align-items: start;
+    gap: 50px;
+  }
+
+  .about__text {
+    line-height: 150%;
+  }
+
+  .card {
+    max-width: 234px;
+  }
+
+  .responsible .container {
+    padding: 100px 0px;
+  }
+
+  .responsible__content {
+    flex-direction: row;
+  }
+
+  .information__title {
+    align-items: start;
+  }
+
+  .clients__logo-wrapper {
+    justify-content: space-around;
+  }
+
+  .footer__content-wrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-business {
+    flex-direction: row;
+    align-items: start;
+  }
+}

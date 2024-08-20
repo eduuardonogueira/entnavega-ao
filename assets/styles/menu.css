@@ -1,5 +1,4 @@
 .menu {
-  width: 100vw;
   padding: 12px 24px;
   box-sizing: border-box;
 }
@@ -11,11 +10,87 @@
   width: 100%;
 }
 
-.menu__icon {
-  font-size: 32px;
-}
-
 .menu-links {
   display: none;
+  justify-content: center;
+  position: absolute;
+  inset: 0px;
+  z-index: 99;
+  width: 70%;
+  height: 100dvh;
+  background: var(--white);
+  padding: 36px;
   flex-direction: column;
+  gap: 36px;
+  box-sizing: border-box;
+}
+
+.menu-links li a {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: center;
+  width: min-content;
+  font-family: "Poppins", system-ui;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: bold;
+  transition: 0.5s ease;
+
+  > i {
+    opacity: 0;
+    font-style: 30px;
+    font-weight: bold;
+    transform: translateX(-30px);
+    transition: 0.5s ease transform;
+  }
+
+  &:hover {
+    transform: translateX(10px);
+    color: var(--blue-500);
+    cursor: pointer;
+
+    > p {
+      border-bottom: 1px solid var(--blue-500);
+    }
+
+    > i {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+.menu-button,
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 32px;
+
+  &:hover {
+    color: var(--blue-500);
+    cursor: pointer;
+  }
+}
+
+.close-menu {
+  position: absolute;
+  right: 36px;
+  top: 36px;
+}
+
+.close-screen {
+  display: none;
+  top: 0;
+  right: 0px;
+  position: absolute;
+  height: 100dvh;
+  width: 30vw;
+  z-index: 99;
+}
+
+.is-open {
+  display: flex;
 }
