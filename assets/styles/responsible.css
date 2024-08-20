@@ -82,6 +82,7 @@
 
     > a {
       text-decoration: none;
+      color: var(--blue-500);
 
       &:hover {
         cursor: pointer;
@@ -105,6 +106,7 @@
 
   > a {
     text-decoration: none;
+    color: var(--blue-500);
 
     &:hover {
       cursor: pointer;
