@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 36px;
+  margin-block: 75px;
+}
+
+.about__img {
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid var(--blue-500);
+  border-radius: 50%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.about__title {
+  text-align: center;
+}
+
+.about__text {
+  text-align: justify;
+  color: var(--black);
+}

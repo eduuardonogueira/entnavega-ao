@@ -1,0 +1,21 @@
+.menu {
+  width: 100vw;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu__icon {
+  font-size: 32px;
+}
+
+.menu-links {
+  display: none;
+  flex-direction: column;
+}
