@@ -41,5 +41,8 @@
 .card__title {
   color: var(--black);
   font-weight: bold;
-  text-transform: capitalize;
+  line-height: 120%;
+  font-size: 16px;
+  text-align: start;
+  align-self: center;
 }

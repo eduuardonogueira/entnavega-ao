@@ -70,6 +70,10 @@
     max-width: 234px;
   }
 
+  .card__title {
+    font-size: 14px;
+  }
+
   .responsible .container {
     padding: 100px 0px;
   }
