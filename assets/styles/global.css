@@ -63,3 +63,71 @@ html {
   line-height: 120%;
   color: var(--white);
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.dash-right {
+  animation: dash-right 1s ease-in forwards;
+}
+
+@keyframes dash-right {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.dash-left {
+  animation: dash-left 1s ease-in forwards;
+}
+
+@keyframes dash-left {
+  0% {
+    opacity: 0.2;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.dash-up {
+  animation: dash-up 1s ease-in forwards;
+}
+
+@keyframes dash-up {
+  0% {
+    opacity: 0.2;
+    transform: translateY(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.dash-down {
+  animation: dash-down 1s ease-in forwards;
+}
+
+@keyframes dash-down {
+  0% {
+    opacity: 0.2;
+    transform: translateY(-150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
